@@ -5,7 +5,8 @@
 
 public class Main {
     public static void main(String[] args) {
-        LongestPalindrome Q = new LongestPalindrome();
-        System.out.print(Q.solution("babad"));
+
+        M.ZigZagPattern Q = new M.ZigZagPattern();
+        System.out.print(Q.solution("ABCDEF", 3));
     }
 }

@@ -2,7 +2,6 @@
  * Created by qiaozhen on 09/07/2017.
  */
 
-
 public class LongestPalindrome {
     public String solution(String s) {
         if (s.length() < 2) {
