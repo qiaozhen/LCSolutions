@@ -6,7 +6,7 @@
 public class Main {
     public static void main(String[] args) {
 
-        M.ZigZagPattern Q = new M.ZigZagPattern();
-        System.out.print(Q.solution("ABCDEF", 3));
+        M.Roman2Integer Q = new M.Roman2Integer();
+        System.out.print(Q.solution("XI"));
     }
 }
