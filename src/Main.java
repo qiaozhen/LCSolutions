@@ -6,7 +6,8 @@
 public class Main {
     public static void main(String[] args) {
 
-        M.Roman2Integer Q = new M.Roman2Integer();
-        System.out.print(Q.solution("XI"));
+        E.LongestCommonPrefix Q = new E.LongestCommonPrefix();
+        String[] strs = {"abstract","absolutaly","annoy","annoversaray","dick"};
+        System.out.print(Q.solution(strs));
     }
 }
