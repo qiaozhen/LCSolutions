@@ -1,19 +1,13 @@
 package M;
 
+import Support.ListNode;
+
 /**
  * Created by qiaozhen on 31/07/2017.
  */
 
 
 public class RemvNthNodeFromEndOfLinkedList {
-    public static class ListNode {
-        public int value;
-        public ListNode next;
-        public ListNode(int x) {
-            value = x;
-        }
-    }
-
     public ListNode solution (ListNode head, int n) {
         ListNode bh = head;
         ListNode ah = head;

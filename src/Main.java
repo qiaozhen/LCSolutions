@@ -1,6 +1,7 @@
 import M.RemvNthNodeFromEndOfLinkedList;
+import Support.ListNode;
 
-import java.util.Arrays;
+import java.util.*;
 
 /**
  * Created by qiaozhen on 09/07/2017.
@@ -10,7 +11,24 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
 
-        E.ValidParentheses Q = new E.ValidParentheses();
-        System.out.print(Q.solution("["));
+        H.MergeKSortedLists Q = new H.MergeKSortedLists();
+        ArrayList<Integer> list = new ArrayList<>();
+        for (int i = 0; i < 100000; i++) {
+            Random ran = new Random();
+            int x = ran.nextInt(1000) + 1;
+            list.add(x);
+        }
+        ArrayList<ListNode> test = new ArrayList<>();
+        for (Integer i : list) {
+            test.add(new ListNode(i));
+        }
+        ListNode[] array = (ListNode[])test.toArray(new ListNode[test.size()]);
+        String s = "";
+        ListNode n = Q.solution(array);
+        while (n != null) {
+            s = s + n.value + ",";
+            n = n.next;
+        }
+        System.out.print(s);
     }
 }
